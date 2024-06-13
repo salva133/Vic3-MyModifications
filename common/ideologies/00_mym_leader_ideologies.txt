@@ -81,6 +81,14 @@ ideology_mym_burgundist = {
 		law_women_in_the_workplace = strongly_disapprove
 		law_womens_suffrage= strongly_disapprove
 	}
+	lawgroup_land_reform = {
+		law_serfdom = strongly_approve
+		law_tenant_farmers = strongly_disapprove
+		law_commercialized_agriculture = strongly_disapprove
+		law_homesteading= strongly_disapprove
+		law_collectivized_agriculture= strongly_disapprove
+	}
+
 	
 	possible = {
 		owner = { has_technology_researched = mass_propaganda }
