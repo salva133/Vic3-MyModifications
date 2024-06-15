@@ -5,17 +5,10 @@ ig_mym_burgundists = {
 	index = 0
 
 	ideologies = {
-		ideology_gov_radical_republican
-		ideology_ban_conservative_supremacist
-		ideology_cit_ethnonationalist
-		ideology_dop_meritocratic_autocrat
-		ideology_eco_autarky
-		ideology_fem_patriarchal
-		ideology_mil_emergency
-		ideology_rel_atheist
-		ideology_sta_powerful_state
-		ideology_wel_no_welfare
-		ideology_mym_burgundist
+		ideology_mym_burgundist_power_structure
+		ideology_mym_burgundist_economy
+		ideology_mym_burgundist_social_structure
+		ideology_mym_burgundist_specifics
 	}
 
 	enable = {
