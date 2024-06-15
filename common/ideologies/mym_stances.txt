@@ -1,19 +1,18 @@
-ideology_mym_burgundist = {
+ideology_mym_burgundist_specifics = {
 	icon = "gfx/interface/icons/ig_icons/burgundists.dds"
-
+	priority = 1000
 	lawgroup_labor_rights = {
-		law_mym_spartanism = strongly_approve
-		law_no_workers_rights = strongly_disapprove
+		law_no_workers_rights = approve
 		law_regulatory_bodies = strongly_disapprove
-		law_worker_protections = strongly_disapprove
+		law_worker_protections = strongly_approve
+		law_mym_spartanism = strongly_approve
 	}
-	
 	lawgroup_free_speech = {
-		law_protected_speech = strongly_disapprove
-		law_right_of_assembly = strongly_disapprove
-		law_censorship = neutral
-		law_outlawed_dissent = strongly_approve
 		law_mym_managed_free_speech = strongly_approve
+		law_outlawed_dissent = approve
+		law_censorship = neutral
+		law_right_of_assembly = strongly_disapprove
+		law_protected_speech = strongly_disapprove
 	}
 }
 
