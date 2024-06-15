@@ -30,7 +30,7 @@ ig_mym_burgundists = {
 	}
 
 	on_enable = {
-		ig:ig_fascists = {
+		ig:ig_mym_burgundists = {
 			# set_ig_trait = ig_trait:ig_trait_right_systematic_corruption
 			set_ig_trait = ig_trait:ig_trait_right_bastion_of_freedom
 			set_ig_trait = ig_trait:ig_trait_right_election_interference
@@ -39,7 +39,7 @@ ig_mym_burgundists = {
 			limit = {
 				country_has_primary_culture = cu:brazilian
 			}
-			ig:ig_fascists = {
+			ig:ig_mym_burgundists = {
 				set_interest_group_name = ig_integralists
 			}
 		}
@@ -52,7 +52,7 @@ ig_mym_burgundists = {
 		owner = {
 			NOT = { is_country_type = decentralized }
 			exists = ig:ig_mym_burgundists
-			ig:ig_fascists = { NOT = { has_ideology = ideology:ideology_nonexistent } }
+			ig:ig_mym_burgundists = { NOT = { has_ideology = ideology:ideology_nonexistent } }
 		}
 	}
 
@@ -110,6 +110,8 @@ ig_mym_burgundists = {
 			}
 		}	
 
+		multiply = bpm_ig_agitators_popularity
+		multiply = bpm_ig_ruler_popularity
 		multiply = ig_attraction_to_ruler_ideology_from_stability
 
 		multiply = {
