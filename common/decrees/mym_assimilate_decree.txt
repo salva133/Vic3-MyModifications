@@ -8,6 +8,7 @@
 
 
 decree_genocide_suppression = {
+
 	texture = "gfx/interface/icons/decree/decree_violent_suppression.dds"		
 	
 	unlocking_technologies = {
@@ -17,6 +18,10 @@ decree_genocide_suppression = {
 
 	valid = {
 		owner = {
+			OR = {
+				has_law = law_type:law_national_guard
+				has_law = law_type:law_secret_police
+			}
 			OR = {
 				has_law = law_type:law_ethnostate
 				has_law = law_type:law_national_supremacy
@@ -36,23 +41,33 @@ decree_genocide_suppression = {
         state_radicals_from_discrimination_mult = 1000
         country_secession_progress_mult = 0.5
         state_mortality_mult = 100
-        state_accepted_birth_rate_mult = 91
+        state_accepted_birth_rate_mult = 50
 	}
-	
+
 	cost = 100
 	
 	ai_weight = {
 		value = 0
 	}
+
 }
 
 decree_assimilate_values = {
+
 	texture = "gfx/interface/icons/decree/decree_promote_national_values.dds"
+
 	unlocking_technologies = {
 		centralization
 	}
+
 	valid = {
-		owner = { NOT { has_law = law_type:law_multicultural } }
+		owner = { 
+			NOT = { has_law = law_type:law_multicultural }
+			OR = {
+				has_law = law_type:law_national_guard
+				has_law = law_type:law_secret_police
+			}
+		}
 		any_scope_pop = {
 			pop_is_discriminated = yes
 			OR = {
@@ -61,14 +76,16 @@ decree_assimilate_values = {
 			}
 		}
 	}
+
 	modifier = {
 		state_assimilation_mult = 10
 		state_conversion_mult = 10
 		# state_non_accepted_mortality_mult = 50
-	    state_accepted_birth_rate_mult = 2.01
+	    state_accepted_birth_rate_mult = 1.5
 	    state_birth_rate_mult = -1
         state_mortality_mult = 1
 	}
+
 	cost = 100
 	
 	ai_weight = {
@@ -128,16 +145,31 @@ decree_assimilate_values = {
 			multiply = 1.5
 		}		
 	}
+
 }
 
 decree_homelandoverall_values = {
+
 	texture = "gfx/interface/icons/decree/decree_promote_national_values.dds"
+
 	unlocking_technologies = {
 		centralization
-	}	
+	}
+
+	valid = {
+		owner = { 
+			NOT = { has_law = law_type:law_multicultural }
+			OR = {
+				has_law = law_type:law_national_guard
+				has_law = law_type:law_secret_police
+			}
+		}
+	}
+
 	modifier = {
 	    state_non_homeland_mortality_mult = 10000
 	}
+
 	cost = 100
 	
 	ai_weight = {
@@ -197,4 +229,5 @@ decree_homelandoverall_values = {
 			multiply = 1.5
 		}		
 	}
+
 }
