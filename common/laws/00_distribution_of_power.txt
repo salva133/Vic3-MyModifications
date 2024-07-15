@@ -1301,4 +1301,3 @@ law_single_party_state = {
 		}
 	}
 }
-
