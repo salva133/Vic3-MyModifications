@@ -12,8 +12,8 @@ corleone_event.1 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
 	trigger = {
-		game_date > 1920
-		c:USA = exists
+		game_date > 1920.1.1
+		exists = c:USA
 		NOT = { has_variable = vito_corleone_var }
 	}
 
