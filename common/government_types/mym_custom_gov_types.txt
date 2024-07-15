@@ -42,6 +42,10 @@ gov_mym_knights_order = {
 		country_has_voting_franchise = yes
 		has_law = law_type:law_timocracy
 		has_law = law_type:theocracy
+		NOR = {
+			country_has_state_religion = rel:sunni
+			country_has_state_religion = rel:shia
+		}
 	}
 
 	on_government_type_change = { change_to_presidential_elective = yes }
