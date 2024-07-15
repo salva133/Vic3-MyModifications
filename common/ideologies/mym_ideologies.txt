@@ -1,0 +1,108 @@
+ideology_timocrat_leader = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_jingoist.dds"
+	
+	character_ideology = yes
+	
+	lawgroup_army_model = {
+		law_mass_conscription = strongly_approve
+		law_professional_army = approve
+		law_national_militia = neutral
+		law_peasant_levies = disapprove
+	}
+	
+	possible = {
+		# Agitators should have an ideology at odds with current laws
+		scope:interest_group = {
+			NOR = {
+				is_interest_group_type = ig_armed_forces
+				is_interest_group_type = ig_rural_folk
+			}
+		}
+		scope:interest_group = {
+			NOR = {
+				has_variable = communist_ig_var
+				has_variable = chose_vanguardism
+				has_variable = chose_fascism
+				has_variable = chose_conservatism
+				has_variable = chose_ethno_nationalism
+			}
+		}
+	}
+	
+	leader_weight = {
+		value = 100
+		# less likely if issues are not relevant
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_mass_conscription
+				}
+			}
+			add = -75
+		}
+		# more likely if you border a rival
+		if = {
+			limit = {
+				owner = {
+					any_rival_country = {
+						any_neighbouring_state = {
+							owner = root.owner
+						}
+					}
+				}
+			}
+			add = 50
+		}
+		# more likely if you're the defender in a war
+		if = {
+			limit = {
+				owner = {
+					is_at_war = yes
+					any_scope_war = {
+						defender_warleader = { this = ROOT.owner }
+					}
+				}
+			}
+			add = 50
+		}
+		# less likely for conservative French IG's
+		if = {
+			limit = {
+				owner = {
+					exists = c:FRA
+					this = c:FRA
+					has_journal_entry = je_divided_monarchists
+				}
+				scope:interest_group = {
+					OR = {
+						is_interest_group_type = ig_landowners
+						is_interest_group_type = ig_petty_bourgeoisie
+						is_interest_group_type = ig_devout
+					}
+				}
+			}
+			add = -100
+		}
+		# conservative and/or reactionary leaders have a higher spawn chance if the Anti-Dreyfusards won.
+		if = {
+			limit = {
+				scope:interest_group = {
+					has_variable = anti_dreyfusard_victory
+				}
+			}
+			add = 50
+		}
+		# More likely under Alexei II
+		if = {
+			limit = {
+				owner = {
+					any_scope_character = {
+						has_template = RUS_alexei_ii
+						is_ruler = yes
+					}
+				}
+			}
+			add = 75
+		}
+	}
+}
