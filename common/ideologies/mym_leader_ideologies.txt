@@ -1,4 +1,4 @@
-ideology_timocrat_leader = {
+ideology_timocrat = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_jingoist.dds"
 	
 	character_ideology = yes
