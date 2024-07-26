@@ -458,11 +458,33 @@ law_timocracy = {
 
 	unlocking_technologies = {
 		democracy
+		mandatory_service
 	}
 
 	disallowing_laws = {
 		law_chiefdom
-		law_command_economy
+		law_womens_suffrage
+	}
+
+	on_activate = {
+		scripted_effect_parties_emergence = yes
+		clear_legal_single_party = yes
+		if = {
+			limit = {
+				has_law = law_womens_suffrage
+			}
+			deactivate_law = law_womens_suffrage
+			activate_law = law_women_in_the_workplace
+		}
+	}
+
+	possible_political_movements = {
+		law_oligarchy
+		law_autocracy 
+		law_wealth_voting
+		law_census_voting
+		law_technocracy
+		law_single_party_state
 	}
 
 	modifier = {
@@ -494,11 +516,6 @@ law_timocracy = {
 		law_census_voting
 		law_technocracy
 		law_single_party_state
-	}
-
-	on_activate = {
-		scripted_effect_parties_emergence = yes
-		clear_legal_single_party = yes
 	}
 	
 	can_impose = {
