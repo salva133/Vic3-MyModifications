@@ -118,3 +118,4 @@ ideology_timocrat = {
 		}
 	}
 }
+
