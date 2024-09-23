@@ -21,6 +21,8 @@ ideology_timocrat = {
 		law_professional_army = approve
 		law_national_militia = neutral
 		law_peasant_levies = disapprove
+		law_full_disarmament = strongly_disapprove
+		law_bgy_total_war = neutral
 	}
 	
 	possible = {
@@ -168,6 +170,8 @@ ideology_national_fascist = {
 		law_professional_army = approve
 		law_national_militia = disapprove
 		law_peasant_levies = strongly_disapprove
+		law_full_disarmament = strongly_disapprove
+		law_bgy_total_war = approve
 	}
 
 	lawgroup_free_speech = {
@@ -355,6 +359,7 @@ ideology_pacifist = {
 		law_peasant_levies = disapprove
 		law_mass_conscription = strongly_disapprove
 		law_full_disarmament = strongly_approve
+		law_bgy_total_war = strongly_disapprove
 	}
 
 	lawgroup_colonization = {		
