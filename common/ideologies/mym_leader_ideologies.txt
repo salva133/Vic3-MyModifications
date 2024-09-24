@@ -29,7 +29,7 @@ ideology_timocrat = {
 		# Agitators should have an ideology at odds with current laws
 		scope:interest_group = {
 			NOR = {
-				is_interest_group_type = ig_armed_forces
+				is_interest_group_type = ig_devout
 				is_interest_group_type = ig_rural_folk
 			}
 		}
@@ -143,8 +143,8 @@ ideology_national_fascist = {
 	lawgroup_economic_system = {
 		law_command_economy = strongly_approve
 		law_interventionism = approve
-		law_traditionalism = neutral
-		law_agrarianism = neutral
+		law_traditionalism = strongly_disapprove
+		law_agrarianism = strongly_disapprove
 		law_industry_banned = strongly_disapprove
 		law_laissez_faire = strongly_disapprove
 		law_cooperative_ownership = strongly_disapprove
@@ -153,14 +153,14 @@ ideology_national_fascist = {
 	lawgroup_trade_policy = {
 		law_protectionism = approve
 		law_isolationism = approve
-		law_mercantilism = disapprove
+		law_mercantilism = neutral
 		law_free_trade = strongly_disapprove
 	}
 
 	lawgroup_citizenship = {
 		law_ethnostate = approve
 		law_national_supremacy = approve
-		law_racial_segregation = disapprove
+		law_racial_segregation = neutral
 		law_cultural_exclusion = disapprove
 		law_multicultural = strongly_disapprove	
 	}
@@ -179,6 +179,7 @@ ideology_national_fascist = {
 		law_right_of_assembly = strongly_disapprove
 		law_censorship = neutral
 		law_outlawed_dissent = strongly_approve
+		law_mym_managed_free_speech = approve
 	}
 
 	lawgroup_policing = {
