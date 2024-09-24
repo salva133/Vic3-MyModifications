@@ -4,6 +4,10 @@
 
 	progressiveness = 100
 
+	disallowing_laws = {
+		law_timocracy
+	}
+
 	unlocking_technologies = { enlistment_offices anarchism }
 
 	modifier = {

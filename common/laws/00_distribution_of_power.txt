@@ -464,6 +464,7 @@ law_timocracy = {
 	disallowing_laws = {
 		law_chiefdom
 		law_womens_suffrage
+		law_full_disarmament
 	}
 
 	on_activate = {
