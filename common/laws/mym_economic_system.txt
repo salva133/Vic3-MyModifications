@@ -21,12 +21,11 @@ law_traditionalism = {
 	
 	modifier = {
 		country_disable_investment_pool_bool = yes
-		country_disable_nationalization_without_compensation_bool = yes
-		# state_shopkeepers_investment_pool_efficiency_mult = -0.5
-		# state_capitalists_investment_pool_efficiency_mult = -0.5
-		# state_farmers_investment_pool_efficiency_mult = -0.5	
-		# state_clergymen_investment_pool_efficiency_mult = -0.5	
-		# state_aristocrats_investment_pool_efficiency_mult = -0.5	
+		state_shopkeepers_investment_pool_efficiency_mult = -0.5
+		state_capitalists_investment_pool_efficiency_mult = -0.5
+		state_farmers_investment_pool_efficiency_mult = -0.5	
+		state_clergymen_investment_pool_efficiency_mult = -0.5	
+		state_aristocrats_investment_pool_efficiency_mult = -0.5	
 		state_bureaucracy_population_base_cost_factor_mult = -0.25
 		country_government_dividends_reinvestment_add = 0.25
 		state_tax_capacity_mult = -0.25
@@ -34,7 +33,9 @@ law_traditionalism = {
 		building_nationalization_cost_mult = 1.0
 		building_nationalization_investment_return_add = 0.1
 		country_leverage_resistance_mult = 0.25
+
 		state_market_access_price_impact = -0.15
+		country_disable_nationalization_without_compensation_bool = yes
 	}
 	
 	possible_political_movements = {
@@ -87,7 +88,7 @@ law_interventionism = {
 	modifier = {
 		country_disable_investment_pool_bool = yes
 		country_disable_nationalization_without_compensation_bool = yes
-		country_private_construction_allocation_mult = 0.5
+		# country_private_construction_allocation_mult = 0.5
 		building_nationalization_investment_return_add = 0.5
 		country_government_dividends_reinvestment_add = 0.5
 		country_government_dividends_efficiency_add = 0.25
@@ -201,15 +202,16 @@ law_agrarianism = {
 	
 	modifier = {
 		country_disable_investment_pool_bool = yes
-		country_disable_nationalization_without_compensation_bool = yes
-		# state_aristocrats_investment_pool_efficiency_mult = 0.5
-		# state_clergymen_investment_pool_efficiency_mult = 0.5
-		# state_farmers_investment_pool_efficiency_mult = 0.5
-		# state_capitalists_investment_pool_efficiency_mult = -0.25
-		country_private_construction_allocation_mult = 0.5
+		state_aristocrats_investment_pool_efficiency_mult = 0.5
+		state_clergymen_investment_pool_efficiency_mult = 0.5
+		state_farmers_investment_pool_efficiency_mult = 0.5
+		state_capitalists_investment_pool_efficiency_mult = -0.25
+		# country_private_construction_allocation_mult = 0.5
 		building_nationalization_investment_return_add = 0.5
 		country_government_dividends_reinvestment_add = 0.5
 		country_government_dividends_efficiency_add = 0.3
+		
+		country_disable_nationalization_without_compensation_bool = yes
 	}
 	
 	possible_political_movements = {
@@ -384,18 +386,18 @@ law_industry_banned = {
 
 	modifier = {
 		country_disable_investment_pool_bool = yes
-		country_disable_nationalization_without_compensation_bool = yes
 		building_group_bg_agriculture_throughput_add = 0.1
 		building_group_bg_plantations_throughput_add = 0.1
 		state_expected_sol_mult = -0.1
 		interest_group_ig_rural_folk_pol_str_mult = 0.5
-		# state_aristocrats_investment_pool_contribution_add = 0.25
-		country_private_construction_allocation_mult = 0.5
+		state_aristocrats_investment_pool_contribution_add = 0.25
+		# country_private_construction_allocation_mult = 0.5
 		country_production_tech_research_speed_mult = -0.25
 		country_production_tech_spread_mult = -0.25
 		building_nationalization_investment_return_add = 0.5
 		country_government_dividends_reinvestment_add = 0.25
 		country_government_dividends_efficiency_add = 0.3
+		country_disable_nationalization_without_compensation_bool = yes
 	}
 
 	possible_political_movements = {
@@ -459,15 +461,14 @@ law_laissez_faire = {
 	}
 	
 	modifier = {
-		country_disable_investment_pool_bool = no
-		country_disable_nationalization_bool = yes
-		country_force_privatization_bool = yes
 		country_loan_interest_rate_mult = -0.25
-		state_shopkeepers_investment_pool_efficiency_mult = 0.25
+		state_shopkeepers_investment_pool_efficiency_mult = 0.25	
 		state_capitalists_investment_pool_efficiency_mult = 0.25
 		country_private_construction_allocation_mult = 0.95
-		country_government_dividends_reinvestment_add = 1.0	
+		country_government_dividends_reinvestment_add = 1.0		
 		country_max_companies_add = 1
+		country_disable_nationalization_bool = yes
+		country_force_privatization_bool = yes
 	}
 	
 	possible_political_movements = {
@@ -578,12 +579,13 @@ law_cooperative_ownership = {
 	
 	modifier = {
 		country_disable_investment_pool_bool = yes
-		country_force_collectivization_bool = yes
-		# state_shopkeepers_investment_pool_efficiency_mult = 0.25	
-		# state_farmers_investment_pool_efficiency_mult = 0.25
-		country_private_construction_allocation_mult = 0.35
+		state_shopkeepers_investment_pool_efficiency_mult = 0.25	
+		state_farmers_investment_pool_efficiency_mult = 0.25
+		# country_private_construction_allocation_mult = 0.35
 		country_government_dividends_reinvestment_add = 1.0
 
+		country_force_collectivization_bool = yes
+		country_disable_privatization_bool = yes
 	}
 	
 	possible_political_movements = {
@@ -674,13 +676,16 @@ law_command_economy = {
 	
 	modifier = {
 		country_disable_investment_pool_bool = yes
-		country_disable_privatization_bool = yes
+		
 		country_authority_mult = 0.25
 		country_bureaucrats_pol_str_mult = 0.25
 		building_nationalization_cost_mult = -0.5
 		building_nationalization_radicals_mult = -0.75
 		country_government_dividends_efficiency_add = 0.4
+		
 		country_leverage_resistance_mult = 0.25
+
+		country_disable_privatization_bool = yes
 	}
 	
 	possible_political_movements = {
