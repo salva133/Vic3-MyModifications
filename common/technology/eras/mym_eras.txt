@@ -1,0 +1,3 @@
+﻿era_6 = { # Mean Late-game tech 
+	technology_cost = 9999999
+}
