@@ -1,4 +1,4 @@
-# The new ones
+﻿# The new ones
 ideology_timocrat = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_timocrat.dds"
 	
