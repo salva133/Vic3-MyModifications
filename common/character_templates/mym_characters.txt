@@ -1,4 +1,4 @@
-vito_andolini_character_template = {
+﻿vito_andolini_character_template = {
 	first_name = "vito_andolini_first_name"
 	last_name = "vito_andolini_last_name"
 	historical = no
