@@ -1,4 +1,4 @@
-NAI = {
+﻿NAI = {
 	DEFAULT_STRATEGY_STRING = "ai_strategy_default"
 
 	STRATEGY_RANDOM_FACTOR = 20.0 # The higher this is, the more random AI strategy selection will be
