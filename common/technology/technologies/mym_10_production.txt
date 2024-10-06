@@ -1,66 +1,49 @@
-﻿building_employee_size_reduction = {
-	era = era_1
-	texture = "gfx/interface/icons/invention_icons/electrical_capacitors.dds"
-	category = production
+﻿# building_employee_size_reduction = {
+# 	era = era_1
+# 	texture = "gfx/interface/icons/invention_icons/electrical_capacitors.dds"
+# 	category = production
 
-	modifier = {
-		building_group_bg_service_employee_mult = -0.8
-		building_group_bg_agriculture_employee_mult = -0.8
-		building_group_bg_plantations_employee_mult = -0.8
-		building_group_bg_mining_employee_mult = -0.8
-		building_group_bg_rubber_employee_mult = -0.8
-		building_group_bg_logging_employee_mult = -0.8
-		building_group_bg_fishing_employee_mult = -0.8
-		building_group_bg_whaling_employee_mult = -0.8
-		building_group_bg_oil_extraction_employee_mult = -0.8
-		building_group_bg_manufacturing_employee_mult = -0.8
-		building_group_bg_government_employee_mult = -0.8
-		building_group_bg_infrastructure_employee_mult = -0.8
-	}
+# 	modifier = {
+# 		building_group_bg_service_employee_mult = -0.8
+# 		building_group_bg_agriculture_employee_mult = -0.8
+# 		building_group_bg_plantations_employee_mult = -0.8
+# 		building_group_bg_mining_employee_mult = -0.8
+# 		building_group_bg_rubber_employee_mult = -0.8
+# 		building_group_bg_logging_employee_mult = -0.8
+# 		building_group_bg_fishing_employee_mult = -0.8
+# 		building_group_bg_whaling_employee_mult = -0.8
+# 		building_group_bg_oil_extraction_employee_mult = -0.8
+# 		building_group_bg_manufacturing_employee_mult = -0.8
+# 		building_group_bg_government_employee_mult = -0.8
+# 		building_group_bg_infrastructure_employee_mult = -0.8
+# 	}
 
-	ai_weight = {
-		value = 1000
-	}
-}
+# 	ai_weight = {
+# 		value = 1000
+# 	}
+# }
 
-solution_to_everything = {
-	era = era_10
-	texture = "gfx/interface/icons/invention_icons/electrical_capacitors.dds"
-	category = production
+# solution_to_everything = {
+# 	era = era_10
+# 	texture = "gfx/interface/icons/invention_icons/electrical_capacitors.dds"
+# 	category = production
 
-	unlocking_technologies = {
-		dough_rollers
-		flash_freezing
-		oil_turbine
-		arc_welding
-		compression_ignition
-		building_employee_size_reduction
-	}
+# 	unlocking_technologies = {
+# 		dough_rollers
+# 		flash_freezing
+# 		oil_turbine
+# 		arc_welding
+# 		compression_ignition
+# 		building_employee_size_reduction
+# 	}
 
-	modifier = {
-		country_resource_discovery_chance_mult = 1
-		building_goods_input_mult = -0.95
-		building_throughput_add = 1
-		# building_group_bg_service_employee_mult = -0.9
-		# building_group_bg_agriculture_employee_mult = -0.9
-		# building_group_bg_plantations_employee_mult = -0.9
-		# building_group_bg_mining_employee_mult = -0.9
-		# building_group_bg_gold_mining_employee_mult = -0.9
-		# building_group_bg_coal_mining_employee_mult = -0.9
-		# building_group_bg_iron_mining_employee_mult = -0.9
-		# building_group_bg_lead_mining_employee_mult = -0.9
-		# building_group_bg_sulfur_mining_employee_mult = -0.9
-		# building_group_bg_rubber_employee_mult = -0.9
-		# building_group_bg_logging_employee_mult = -0.9
-		# building_group_bg_fishing_employee_mult = -0.9
-		# building_group_bg_whaling_employee_mult = -0.9
-		# building_group_bg_oil_extraction_employee_mult = -0.9
-		# building_group_bg_manufacturing_employee_mult = -0.9
-		# building_group_bg_government_employee_mult = -0.9
-		# building_group_bg_infrastructure_employee_mult = -0.9
-	}
+# 	modifier = {
+# 		country_resource_discovery_chance_mult = 1
+# 		building_goods_input_mult = -0.95
+# 		building_throughput_add = 1
+# 	}
 
-	ai_weight = {
-		value = 0
-	}
-}
+# 	ai_weight = {
+# 		value = 0
+# 	}
+# }
