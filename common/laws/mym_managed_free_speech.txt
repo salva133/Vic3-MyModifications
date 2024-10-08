@@ -5,14 +5,20 @@
 	progressiveness = 0
 
 	disallowing_laws = {
+		law_no_home_affairs
 		law_guaranteed_liberties
 	}
-	
+
+	institution = institution_minitrue
+	institution_modifier = {
+		country_authority_add = 200
+		country_bolster_ig_attraction_mult = 2
+		country_suppression_ig_attraction_mult = -2
+		country_tech_spread_mult = -0.198
+	}
+
 	modifier = {
-		country_authority_add = 1000
-		country_bolster_ig_attraction_mult = 10
-		country_suppression_ig_attraction_mult = -10
-		country_tech_spread_mult = 0.99
+		country_institution_minitrue_max_investment_add = 5
 	}
 	
 	possible_political_movements = {
@@ -21,6 +27,7 @@
 
 	unlocking_technologies = {
 		political_agitation
+		mass_surveillance
 	}
 
 	pop_support = {
